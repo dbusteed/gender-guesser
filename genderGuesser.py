@@ -1,4 +1,16 @@
 #Davis Busteed -- busteed.davis@gmail.com
+#
+#September 2017
+#
+#This is just an adaption of a basic decision tree example
+#that i picked up in a youtube video by Siraj Raval
+#
+
+#menu
+print("\n")
+print("-----Gender Guesser-----")
+print("\n")
+print('Initializing data sets...\n')
 
 #gonna need these
 from sklearn import tree
@@ -33,10 +45,6 @@ clf = tree.DecisionTreeClassifier()
 #fit the values to the labels
 clf = clf.fit(values, labels)
 	
-#menu
-print("\n")
-print("-----Gender Guesser-----")
-print("\n")
 
 #get inputs from user
 h = int(input("What is your height in inches?: "))
@@ -51,7 +59,7 @@ fb = input("Are you a %s? [y/n] " %tuple(pred))
 
 print("\n")
 
-#
+#got it right?
 if fb == 'y':
 	print("Awesome!")
 else:
